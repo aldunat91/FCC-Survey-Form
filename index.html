@@ -6,162 +6,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FCC: Survey Form</title>
     <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <div class="content-container">
-        <header>
-            <h1 id="title">The <span class="brand">Fancy Burger</span> Survey Form</h1>
-            <p id="description"><em>You could win a $30.00 gift card by submitting your experience with us !</em></p>
-        </header>
-        <form action="#" id="survey-form">
-            <div class="form-content-group">
-                <p class="content-group-instruction">Hi there ! Nice to meet you..</p>
-                <label for="name" id="name-label">Name:</label>
-                <input type="text" name="name" id="name" class="form-control" placeholder="John Doe" required>
-                <label for="email" id="email-label">Email:</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="johndoe@example.com" required>
-                <label for="number" id="number-label">Age:</label>
-                <input type="number" name="age" id="number" class="form-control" placeholder="How old are you?" min="16" max="99">
-            </div>
-            <div class="form-content-group">
-                <p class="content-group-instruction">How often do you eat at Fancy Buruger?</p>
-                <label for="weekly">
-                    <input type="radio" name="frequency" value="weekly" id="weekly">
-                    Weekly
-                </label>
-                <label for="monthly">
-                    <input type="radio" name="frequency" value="monthly" id="monthly">
-                    Monthly
-                </label>
-                <label for="trimester">
-                    <input type="radio" name="frequency" value="trimester" id="trimester">
-                    Every 3 months
-                </label>
-                <label for="semester">
-                    <input type="radio" name="frequency" value="semester" id="semester">
-                    Every 6 months
-                </label>
-                <label for="yearly">
-                    <input type="radio" name="frequency" value="yearly" id="yearly">
-                    Once a Year
-                </label>
-            </div>
-            <div class="form-content-group">
-                <p class="content-group-instruction">Which Fancy Burguers have you eaten?</p>
-                <label for="deluxe-american">
-                    <input type="checkbox" name="eaten-burger" id="deluxe-american" value="deluxe-american">
-                    Deluxe American
-                </label>
-                <label for="diamond-sunset">
-                    <input type="checkbox" name="eaten-burger" id="diamond-sunset" value="diamond-sunset">
-                    Diamond Sunset
-                </label>
-                <label for="exclusive-veggie">
-                    <input type="checkbox" name="eaten-burger" id="exclusive-veggie" value="exclusive-veggie">
-                    Exclusive Veggie
-                </label>
-                <label for="glowing-mushrooms">
-                    <input type="checkbox" name="eaten-burger" id="glowing-mushrooms" value="glowing-mushrooms">
-                    Glowing Mushrooms
-                </label>
-                <label for="golden-texan">
-                    <input type="checkbox" name="eaten-burger" id="golden-texan" value="golden-texan">
-                    Golden Texan
-                </label>
-                <label for="jewelry-shore">
-                    <input type="checkbox" name="eaten-burger" id="jewelry-shore" value="jewelry-shore">
-                    Jewelry Shore
-                </label>
-                <label for="luxury-harvest">
-                    <input type="checkbox" name="eaten-burger" id="luxury-harvest" value="luxury-harvest">
-                    Luxury Harvest
-                </label>
-                <label for="sapphire-lagoon">
-                    <input type="checkbox" name="eaten-burger" id="sapphire-lagoon" value="sapphire-lagoon">
-                    Sapphire Lagoon
-                </label>
-                <label for="shiny-lifestyle">
-                    <input type="checkbox" name="eaten-burger" id="shiny-lifestyle" value="shiny-lifestyle">
-                    Shiny Lifestyle
-                </label>
-                <label for="sparkling-forest">
-                    <input type="checkbox" name="eaten-burger" id="sparkling-forest" value="sparkling-forest">
-                    Sparkling Forest
-                </label>
-            </div>
-            <div class="form-content-group">
-                <p class="content-group-instruction">What is your favourite Fancy Burger?</p>
-                <select name="fav-burger" id="dropdown" class="form-control">
-                    <option disabled selected value="">Select a Fancy Burger</option>
-                    <option value="deluxeAmerican">Deluxe American</option>
-                    <option value="diamondSunset">Diamond Sunset</option>
-                    <option value="exclusiveVeggie">Exclusive Veggie</option>
-                    <option value="glowingMushrooms">Glowing Mushrooms</option>
-                    <option value="goldenTexan">Golden Texan</option>
-                    <option value="jewelryShore">Jewelry Shore</option>
-                    <option value="luxuryHarvest">Luxury Harvest</option>
-                    <option value="sapphireLagoon">Sapphire Lagoon</option>
-                    <option value="shinyLifestyle">Shiny Lifestyle</option>
-                    <option value="sparklingForest">Sparkling Forest</option>
-                </select>
-            </div>
-            <div class="form-content-group">
-                <p class="content-group-instruction">What did you enjoy the most on your last visit?</p>
-                <label for="enjoy-food-quality">
-                    <input type="checkbox" name="enjoy" id="enjoy-food-quality" value="food-quality">
-                    Food quality & taste
-                </label>
-                <label for="enjoy-service">
-                    <input type="checkbox" name="enjoy" id="enjoy-service" value="service">
-                    Service
-                </label>
-                <label for="enjoy-timing">
-                    <input type="checkbox" name="enjoy" id="enjoy-timing" value="timing">
-                    Timing
-                </label>
-                <label for="enjoy-ambience">
-                    <input type="checkbox" name="enjoy" id="enjoy-ambience" value="ambience">
-                    Ambience & Deco
-                </label>
-                <label for="enjoy-music">
-                    <input type="checkbox" name="enjoy" id="enjoy-music" value="music">
-                    Music 
-                </label>
-            </div>
-            <div class="form-content-group">
-                <p class="content-group-instruction">Is there something you did not enjoy?</p>
-                <label for="not-enjoy-food-quality">
-                    <input type="checkbox" name="not-enjoy" id="not-enjoy-food-quality" value="food-quality">
-                    Food quality & taste
-                </label>
-                <label for="not-enjoy-service">
-                    <input type="checkbox" name="not-enjoy" id="not-enjoy-service" value="service">
-                    Service
-                </label>
-                <label for="not-enjoy-timing">
-                    <input type="checkbox" name="not-enjoy" id="not-enjoy-timing" value="timing">
-                    Timing
-                </label>
-                <label for="not-enjoy-ambience">
-                    <input type="checkbox" name="not-enjoy" id="not-enjoy-ambience" value="ambience">
-                    Ambience & Deco
-                </label>
-                <label for="not-enjoy-music">
-                    <input type="checkbox" name="not-enjoy" id="not-enjoy-music" value="music">
-                    Music 
-                </label>
-            </div>
-            <div class="form-content-group">
-                <p class="content-group-instruction">We would love to read more about your experience:</p>
-                <textarea name="comment" id="comments" placeholder="Type in your comments or suggestions"></textarea>
-            </div>
-            <div class="form-content-group">
-                <button type="submit" id="submit">Done !</button>
-            </div>
-        </form>
-    </div>
+    <main>
+        <div class="content-container">
+            <header>
+                <h1 id="title">The <span class="brand">Fancy Burger</span> Survey Form</h1>
+                <p id="description"><em>You could win a $30.00 gift card by submitting your experience with us !</em></p>
+            </header>
+            <form action="#" id="survey-form">
+                <div class="form-content-group">
+                    <p class="content-group-instruction">Hi there ! Nice to meet you..</p>
+                    <label for="name" id="name-label">Name:</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="John Doe" required>
+                    <label for="email" id="email-label">Email:</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="johndoe@example.com" required>
+                    <label for="number" id="number-label">Age:</label>
+                    <input type="number" name="age" id="number" class="form-control" placeholder="How old are you?" min="16" max="99">
+                </div>
+                <hr>
+                <div class="form-content-group">
+                    <p class="content-group-instruction">How often do you eat at Fancy Buruger?</p>
+                    <label for="weekly">
+                        <input type="radio" name="frequency" value="weekly" id="weekly">
+                        Weekly
+                    </label>
+                    <label for="monthly">
+                        <input type="radio" name="frequency" value="monthly" id="monthly">
+                        Monthly
+                    </label>
+                    <label for="trimester">
+                        <input type="radio" name="frequency" value="trimester" id="trimester">
+                        Every 3 months
+                    </label>
+                    <label for="semester">
+                        <input type="radio" name="frequency" value="semester" id="semester">
+                        Every 6 months
+                    </label>
+                    <label for="yearly">
+                        <input type="radio" name="frequency" value="yearly" id="yearly">
+                        Once a Year
+                    </label>
+                </div>
+                <div class="form-content-group">
+                    <p class="content-group-instruction">Which Fancy Burguers have you eaten?</p>
+                    <label for="deluxe-american">
+                        <input type="checkbox" name="eaten-burger" id="deluxe-american" value="deluxe-american">
+                        Deluxe American
+                    </label>
+                    <label for="diamond-sunset">
+                        <input type="checkbox" name="eaten-burger" id="diamond-sunset" value="diamond-sunset">
+                        Diamond Sunset
+                    </label>
+                    <label for="exclusive-veggie">
+                        <input type="checkbox" name="eaten-burger" id="exclusive-veggie" value="exclusive-veggie">
+                        Exclusive Veggie
+                    </label>
+                    <label for="glowing-mushrooms">
+                        <input type="checkbox" name="eaten-burger" id="glowing-mushrooms" value="glowing-mushrooms">
+                        Glowing Mushrooms
+                    </label>
+                    <label for="golden-texan">
+                        <input type="checkbox" name="eaten-burger" id="golden-texan" value="golden-texan">
+                        Golden Texan
+                    </label>
+                    <label for="jewelry-shore">
+                        <input type="checkbox" name="eaten-burger" id="jewelry-shore" value="jewelry-shore">
+                        Jewelry Shore
+                    </label>
+                    <label for="luxury-harvest">
+                        <input type="checkbox" name="eaten-burger" id="luxury-harvest" value="luxury-harvest">
+                        Luxury Harvest
+                    </label>
+                    <label for="sapphire-lagoon">
+                        <input type="checkbox" name="eaten-burger" id="sapphire-lagoon" value="sapphire-lagoon">
+                        Sapphire Lagoon
+                    </label>
+                    <label for="shiny-lifestyle">
+                        <input type="checkbox" name="eaten-burger" id="shiny-lifestyle" value="shiny-lifestyle">
+                        Shiny Lifestyle
+                    </label>
+                    <label for="sparkling-forest">
+                        <input type="checkbox" name="eaten-burger" id="sparkling-forest" value="sparkling-forest">
+                        Sparkling Forest
+                    </label>
+                </div>
+                <div class="form-content-group">
+                    <p class="content-group-instruction">What is your favourite Fancy Burger?</p>
+                    <select name="fav-burger" id="dropdown" class="form-control">
+                        <option disabled selected value="">Select a Fancy Burger</option>
+                        <option value="deluxeAmerican">Deluxe American</option>
+                        <option value="diamondSunset">Diamond Sunset</option>
+                        <option value="exclusiveVeggie">Exclusive Veggie</option>
+                        <option value="glowingMushrooms">Glowing Mushrooms</option>
+                        <option value="goldenTexan">Golden Texan</option>
+                        <option value="jewelryShore">Jewelry Shore</option>
+                        <option value="luxuryHarvest">Luxury Harvest</option>
+                        <option value="sapphireLagoon">Sapphire Lagoon</option>
+                        <option value="shinyLifestyle">Shiny Lifestyle</option>
+                        <option value="sparklingForest">Sparkling Forest</option>
+                    </select>
+                </div>
+                <hr>
+                <div class="form-content-group">
+                    <p class="content-group-instruction">What did you enjoy the most on your last visit?</p>
+                    <label for="enjoy-food-quality">
+                        <input type="checkbox" name="enjoy" id="enjoy-food-quality" value="food-quality">
+                        Food quality & taste
+                    </label>
+                    <label for="enjoy-service">
+                        <input type="checkbox" name="enjoy" id="enjoy-service" value="service">
+                        Service
+                    </label>
+                    <label for="enjoy-timing">
+                        <input type="checkbox" name="enjoy" id="enjoy-timing" value="timing">
+                        Timing
+                    </label>
+                    <label for="enjoy-ambience">
+                        <input type="checkbox" name="enjoy" id="enjoy-ambience" value="ambience">
+                        Ambience & Deco
+                    </label>
+                    <label for="enjoy-music">
+                        <input type="checkbox" name="enjoy" id="enjoy-music" value="music">
+                        Music 
+                    </label>
+                </div>
+                <div class="form-content-group">
+                    <p class="content-group-instruction">Is there something you did not enjoy?</p>
+                    <label for="not-enjoy-food-quality">
+                        <input type="checkbox" name="not-enjoy" id="not-enjoy-food-quality" value="food-quality">
+                        Food quality & taste
+                    </label>
+                    <label for="not-enjoy-service">
+                        <input type="checkbox" name="not-enjoy" id="not-enjoy-service" value="service">
+                        Service
+                    </label>
+                    <label for="not-enjoy-timing">
+                        <input type="checkbox" name="not-enjoy" id="not-enjoy-timing" value="timing">
+                        Timing
+                    </label>
+                    <label for="not-enjoy-ambience">
+                        <input type="checkbox" name="not-enjoy" id="not-enjoy-ambience" value="ambience">
+                        Ambience & Deco
+                    </label>
+                    <label for="not-enjoy-music">
+                        <input type="checkbox" name="not-enjoy" id="not-enjoy-music" value="music">
+                        Music 
+                    </label>
+                </div>
+                <div class="form-content-group">
+                    <p class="content-group-instruction">We would love to read more about your experience:</p>
+                    <textarea name="comment" id="comments" placeholder="Type in your comments or suggestions"></textarea>
+                </div>
+                <div class="form-content-group">
+                    <button type="submit" id="submit">Done !</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p><small>This is the 2<sup>nd</sup> of five <a target="_blank" href="https://freecodecamp.org">Free Code Camp</a>'s Responsive Web Design project: Survey Form.</small></p>
+        <div class="prev-next-projects">
+            <p class="prev-project"><small><a href="https://josealdunate.github.io/Tim-Ferriss-Tribute-Page/">&laquo; Tribute Page</a></small></a>
+            <p class="next-project"><small><a href="#">Product Landing Page &raquo;</a></small></p>
+        </div>
+        <p class="developer"><small>Developed by <a href="https://github.com/josealdunate">José Ignacio Aldunate</a></small></p>
+    </footer>
+    
 </body>
 </html>

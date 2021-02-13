@@ -38,14 +38,23 @@ body::before {
     margin: auto;
 }
 
+a {
+    color: #e2e2e2;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    font-size: 0.95rem;
+    color: rgb(230, 196, 9);
+}
+
 /* ###########################
 --------- HEADING ------------ 
-############################ */
+############################## */
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
 h1 {
@@ -68,7 +77,13 @@ form {
     background: rgba(0, 0, 0, 0.4);
     border-radius: 0.3rem;
     padding: 1rem 3rem;
-    margin: 1rem 5rem;
+    margin: 3.5rem 5rem;
+    box-shadow: 0px 0px 0.5rem rgba(255, 255, 255, 0.2);
+}
+
+hr {
+    margin: 3rem 0rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .form-content-group {
@@ -93,6 +108,7 @@ label {
     display: flex;
     align-items: center;
     line-height: 1.6rem;
+    color: #efefef;
 }
 
 input[type='radio'],
@@ -105,15 +121,17 @@ input[type='checkbox'] {
 textarea {
     width: 100%;
     border-radius: 0.25rem;
+    padding: 0.5rem;
 }
 
 .form-control {
-    height: 2.5rem;
+    height: 2.6rem;
+    margin: 0.2rem 0px 1.5rem 0px;
 
 }
 
 textarea {
-    min-height: 5rem;
+    min-height: 8rem;
     resize: vertical;
 }
 
@@ -124,11 +142,15 @@ button {
     background-color: rgb(230, 196, 9);
     border: none;
     border-radius: 0.3rem;
+   font-weight: 400;
+   transition: 0.3s ease;
 }
 
-/* ###########################
---------- FORM FOCUS --------- 
-############################ */
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0em 0em 0.3em 0.15em rgb(8, 93, 190);
+}
 
 input:focus,
 textarea:focus,
@@ -139,3 +161,35 @@ button:focus,
     box-shadow: 0px 0px 0.3rem 0.2rem rgb(8, 93, 190);
 }
 
+/* ###########################
+--------- FOOTER --------- 
+############################ */
+
+footer {
+    margin: 5rem 0rem 3rem 0rem;
+    text-align: center;
+}
+footer p {
+    color:  #cacaca;
+    font-weight: 400;
+    margin: 0.1rem;
+}
+
+.prev-next-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.developer {
+    margin-top: 1.5rem;
+}
+
+.prev-project,
+.next-project {
+    padding: 0.2rem 1rem;
+    margin: 0.3rem 0rem;
+}
+.prev-project {
+    border-right: 1px solid #cacaca;;
+}
