@@ -1,3 +1,7 @@
+/* ###########################
+--------- OVERALL ------------ 
+############################ */
+
 *,
 *::before,
 *::after {
@@ -9,6 +13,7 @@ body {
     padding: 2rem 7.5vw;
     font-family: 'Roboto', sans-serif;
     color: white;
+    font-weight: 300;
 }
 
 body::before {
@@ -31,8 +36,11 @@ body::before {
 .content-container {
     width: 50rem;
     margin: auto;
-    
 }
+
+/* ###########################
+--------- HEADING ------------ 
+############################ */
 
 header {
     display: flex;
@@ -52,6 +60,10 @@ h1 {
     margin: 0rem 1rem;
 }
 
+/* ###########################
+----------- FORM -------------
+############################ */
+
 form {
     background: rgba(0, 0, 0, 0.4);
     border-radius: 0.3rem;
@@ -59,18 +71,22 @@ form {
     margin: 1rem 5rem;
 }
 
-.form-group {
-    margin: 1rem 0px;
+.form-content-group {
+    margin-bottom: 3rem;
 }
 
-p {
+.content-group-instruction {
     font-size: 1.3rem;
+    font-weight: 400;
 }
 
 label, 
 input, 
-select {
+select,
+textarea, 
+button {
     font-size: 1.1rem;
+    font-family: inherit;
 }
 
 label {
@@ -79,6 +95,12 @@ label {
     line-height: 1.6rem;
 }
 
+input[type='radio'],
+input[type='checkbox'] {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin: 0.3rem 1rem 0.3rem 2rem;
+}
 .form-control, 
 textarea {
     width: 100%;
@@ -87,16 +109,30 @@ textarea {
 
 .form-control {
     height: 2.5rem;
+
 }
 
 textarea {
     min-height: 5rem;
     resize: vertical;
-    font-family: inherit;
-    font-size: inherit;
 }
 
-textarea:focus, 
+button {
+    display: block;
+    margin: auto;
+    padding: 1.3rem 5rem;
+    background-color: rgb(230, 196, 9);
+    border: none;
+    border-radius: 0.3rem;
+}
+
+/* ###########################
+--------- FORM FOCUS --------- 
+############################ */
+
+input:focus,
+textarea:focus,
+button:focus,
 .form-control:focus {
     outline: none;
     border: 1px solid rgb(8, 93, 190);

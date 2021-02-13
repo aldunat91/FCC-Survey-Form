@@ -7,31 +7,27 @@
     <title>FCC: Survey Form</title>
     <link rel="stylesheet" href="/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <div class="content-container">
         <header>
             <h1 id="title">The <span class="brand">Fancy Burger</span> Survey Form</h1>
-            <p id="description">You could win a $30.00 gift card by submitting your experience with us !</p>
+            <p id="description"><em>You could win a $30.00 gift card by submitting your experience with us !</em></p>
         </header>
         <form action="#" id="survey-form">
-            <p>Hi there ! Nice to meet you..</p>
-            <div class="form-group">
+            <div class="form-content-group">
+                <p class="content-group-instruction">Hi there ! Nice to meet you..</p>
                 <label for="name" id="name-label">Name:</label>
                 <input type="text" name="name" id="name" class="form-control" placeholder="John Doe" required>
-            </div>
-            <div class="form-group">
                 <label for="email" id="email-label">Email:</label>
                 <input type="email" name="email" id="email" class="form-control" placeholder="johndoe@example.com" required>
-            </div>
-            <div class="form-group">
                 <label for="number" id="number-label">Age:</label>
                 <input type="number" name="age" id="number" class="form-control" placeholder="How old are you?" min="16" max="99">
             </div>
-            <div class="form-group">
-                <p>How often do you eat at Fancy Buruger?</p>
+            <div class="form-content-group">
+                <p class="content-group-instruction">How often do you eat at Fancy Buruger?</p>
                 <label for="weekly">
                     <input type="radio" name="frequency" value="weekly" id="weekly">
                     Weekly
@@ -40,21 +36,21 @@
                     <input type="radio" name="frequency" value="monthly" id="monthly">
                     Monthly
                 </label>
-                <label for="every-three-months">
+                <label for="trimester">
                     <input type="radio" name="frequency" value="trimester" id="trimester">
                     Every 3 months
                 </label>
-                <label for="every-six-months">
+                <label for="semester">
                     <input type="radio" name="frequency" value="semester" id="semester">
                     Every 6 months
                 </label>
-                <label for="once-a-year">
+                <label for="yearly">
                     <input type="radio" name="frequency" value="yearly" id="yearly">
                     Once a Year
                 </label>
             </div>
-            <div class="form-group">
-                <p>Which Fancy Burguers have you eaten?</p>
+            <div class="form-content-group">
+                <p class="content-group-instruction">Which Fancy Burguers have you eaten?</p>
                 <label for="deluxe-american">
                     <input type="checkbox" name="eaten-burger" id="deluxe-american" value="deluxe-american">
                     Deluxe American
@@ -96,8 +92,8 @@
                     Sparkling Forest
                 </label>
             </div>
-            <div class="form-group">
-                <p>What is your favourite Fancy Burger?</p>
+            <div class="form-content-group">
+                <p class="content-group-instruction">What is your favourite Fancy Burger?</p>
                 <select name="fav-burger" id="dropdown" class="form-control">
                     <option disabled selected value="">Select a Fancy Burger</option>
                     <option value="deluxeAmerican">Deluxe American</option>
@@ -112,8 +108,8 @@
                     <option value="sparklingForest">Sparkling Forest</option>
                 </select>
             </div>
-            <div class="form-group">
-                <p>What did you enjoy the most on your last visit?</p>
+            <div class="form-content-group">
+                <p class="content-group-instruction">What did you enjoy the most on your last visit?</p>
                 <label for="enjoy-food-quality">
                     <input type="checkbox" name="enjoy" id="enjoy-food-quality" value="food-quality">
                     Food quality & taste
@@ -135,8 +131,8 @@
                     Music 
                 </label>
             </div>
-            <div class="form-group">
-                <p>Is there something you did not enjoy?</p>
+            <div class="form-content-group">
+                <p class="content-group-instruction">Is there something you did not enjoy?</p>
                 <label for="not-enjoy-food-quality">
                     <input type="checkbox" name="not-enjoy" id="not-enjoy-food-quality" value="food-quality">
                     Food quality & taste
@@ -158,11 +154,11 @@
                     Music 
                 </label>
             </div>
-            <div class="form-group">
-                <p>We would love to read more about your experience:</p>
+            <div class="form-content-group">
+                <p class="content-group-instruction">We would love to read more about your experience:</p>
                 <textarea name="comment" id="comments" placeholder="Type in your comments or suggestions"></textarea>
             </div>
-            <div class="form-group">
+            <div class="form-content-group">
                 <button type="submit" id="submit">Done !</button>
             </div>
         </form>
